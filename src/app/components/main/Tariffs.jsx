@@ -48,7 +48,7 @@ export default function Tariffs() {
             {/* /gradient */}
 
             <div>
-              <h3 className="text-textColorWhite uppercase font-semibold text-base leading-[1.17] lg:text-xl lg:leading-[1.17] mb-8 lg:mb-[18px]">
+              <h3 className="text-textColorWhite uppercase font-semibold text-base leading-[1.17] lg:text-xl lg:leading-[1.17] mb-[29px] lg:mb-[33px]">
                 {t("base.title")}
               </h3>
 

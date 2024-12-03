@@ -21,12 +21,14 @@ import PurchaseBtn from "./main/common/PurchaseBtn";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const t = useTranslations("Header");
 
   return (
     <Navbar
       maxWidth="xl"
       shouldHideOnScroll
+      isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       className="px-10 py-7 lg:px-20 md:py-10 custom-navbar max-w-[1280px] mx-auto"
     >
@@ -96,6 +98,9 @@ export default function Header() {
         {routes.map((route) => (
           <NavbarMenuItem key={route.path}>
             <Link
+              onClick={() => {
+                setIsMenuOpen(false);
+              }}
               className="w-full flex flex-col gap-[18px] items-start text-textColorWhite text-xl leading-normal font-medium"
               href={route.path}
               size="lg"

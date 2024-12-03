@@ -1,0 +1,469 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  max-width: 100vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+a {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+}
+
+.btnGradient {
+  background: linear-gradient(
+    126deg,
+    #5bdbfd 16.95%,
+    #7375ff 79.54%,
+    #df93ff 140.99%,
+    #e56f8c 172.25%
+  );
+  box-shadow: 3.883px 5.825px 9.708px 3.883px rgba(167, 93, 243, 0.2) inset;
+
+  @media (min-width: 768px) {
+    box-shadow: 7.368px 11.053px 18.421px 7.368px rgba(167, 93, 243, 0.2) inset;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #5bdbfd 0.26%,
+    #7375ff 51.07%,
+    #df93ff 100.96%,
+    #e56f8c 126.34%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: normal;
+  line-height: normal;
+}
+
+.gradient-secondary-text {
+  background: linear-gradient(
+    91deg,
+    #90e8ff 0.44%,
+    #9c9eff 69.99%,
+    #e3a1ff 138.27%,
+    #e56f8c 173.01%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: normal;
+  line-height: normal;
+}
+
+.gradient-to-right {
+  background: linear-gradient(
+    90deg,
+    #5bdbfd 0.26%,
+    #7375ff 51.07%,
+    #df93ff 100.96%,
+    #e56f8c 126.34%
+  );
+}
+
+.gradient-diagonal {
+  background: linear-gradient(150deg, #13b8ff 1.16%, #a75df3 98.39%);
+}
+
+.gradient-tariff {
+  background: linear-gradient(
+    126deg,
+    #5bdbfd 16.95%,
+    #7375ff 79.54%,
+    #df93ff 140.99%,
+    #e56f8c 172.25%
+  );
+}
+
+.gradient-statistic {
+  background: linear-gradient(150deg, #13b8ff 1.16%, #a75df3 98.39%);
+
+  @media (min-width: 768px) {
+    background: linear-gradient(
+      138deg,
+      #5bdbfd 21.13%,
+      #7375ff 102.75%,
+      #df93ff 182.88%,
+      #e56f8c 223.64%
+    );
+  }
+}
+
+.radial-blue-gradient {
+  background: radial-gradient(circle, #13b8ff 100%, transparent 100%);
+  filter: blur(144.659px);
+}
+
+.radial-violet-gradient {
+  background: radial-gradient(circle, #a75df3 100%, transparent 100%);
+  filter: blur(144.659px);
+}
+
+.radial-violet-gradient-large {
+  background: radial-gradient(circle, #a75df3 100%, transparent 100%);
+  filter: blur(289px);
+}
+
+.radial-blue-gradient-large {
+  background: radial-gradient(circle, #13b8ff 100%, transparent 100%);
+  filter: blur(289px);
+}
+
+.font-sansation {
+  font-family: "Sansation", sans-serif;
+}
+
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+}
+
+.text-foreground-500 {
+  color: white !important;
+  font-weight: 700;
+}
+
+.bg-content1 {
+  background-color: transparent;
+}
+
+.end-3 {
+  inset-inline-end: 1.75rem;
+}
+
+.select {
+  & button {
+    padding: 0;
+    display: flex;
+    width: 52px;
+
+    & svg {
+      left: 26px;
+      stroke-width: 3;
+      width: 22px;
+
+      @media (min-width: 989px) {
+        left: 32px;
+      }
+    }
+  }
+}
+
+.select button div span {
+  font-size: 14px;
+
+  @media (min-width: 660px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 989px) {
+    font-size: 18px;
+  }
+}
+
+.custom-navbar {
+  & header {
+    padding: 0;
+    height: auto;
+
+    & ul {
+      height: 20px;
+    }
+  }
+}
+
+/* лише для бордера без бордер-радіус */
+.border-gradient {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-radius: 12px; /* не працює */
+}
+
+.border-gradient {
+  border-image-source: linear-gradient(
+    90deg,
+    #5bdbfd 0.26%,
+    #7375ff 51.07%,
+    #df93ff 100.96%,
+    #e56f8c 126.34%
+  );
+}
+
+/* працює з радіусом */
+.border-gradient-rounded {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: linear-gradient(to right, #0c0117, #0c0117),
+    linear-gradient(
+      90deg,
+      #5bdbfd 0.26%,
+      #7375ff 51.07%,
+      #df93ff 100.96%,
+      #e56f8c 126.34%
+    );
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.border-gradient-large {
+  border: 2px solid transparent;
+  border-radius: 14px;
+  background: linear-gradient(to right, #fff, #fff),
+    linear-gradient(
+      90deg,
+      #5bdbfd 0.26%,
+      #7375ff 51.07%,
+      #df93ff 100.96%,
+      #e56f8c 126.34%
+    );
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.accordion {
+  padding: 0;
+}
+
+.accordion-item h2 {
+  & button {
+    padding: 0 !important;
+    gap: 10px;
+  }
+}
+
+.accordion-item section div[data-open="true"] div[data-focus="false"] {
+  padding: 0;
+  padding-top: 14px;
+  width: 100%;
+}
+
+.tabs div {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  overflow: visible;
+
+  @media (min-width: 500px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 768px) {
+    gap: 20px;
+  }
+
+  @media (min-width: 1100px) {
+    gap: 37px;
+  }
+}
+
+.tab {
+  width: fit-content;
+  padding: 13px 24px;
+
+  @media (min-width: 989px) {
+    padding: 24px 48px;
+  }
+}
+
+.tab span {
+  border-radius: 46px;
+  background: linear-gradient(
+    90deg,
+    #5bdbfd 0.26%,
+    #7375ff 51.07%,
+    #df93ff 100.96%,
+    #e56f8c 126.34%
+  );
+  color: white;
+}
+
+.tab[aria-selected="true"] div p,
+.tab[aria-selected="false"] div p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.17;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.tab[aria-selected="false"] div p {
+  color: #0c0117;
+}
+
+.tab[aria-selected="true"] {
+  @media (min-width: 768px) {
+    height: 67px;
+  }
+}
+
+.tab[aria-selected="false"] {
+  border-radius: 46px;
+  border: 2px solid transparent;
+  background: linear-gradient(to right, white, white),
+    linear-gradient(
+      90deg,
+      #5bdbfd 0.26%,
+      #7375ff 51.07%,
+      #df93ff 100.96%,
+      #e56f8c 126.34%
+    );
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+
+  @media (min-width: 768px) {
+    height: 67px;
+  }
+}
+
+.bg-img {
+  height: 478px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../../public/image/how-create/bg-mob.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  @media (min-width: 690px) {
+    background-image: url(../../public/image/how-create/bg.png);
+  }
+
+  @media (min-width: 768px) {
+    height: 488px;
+  }
+}
+
+.blackGrad {
+  width: 712px;
+  height: 1486px;
+  background: radial-gradient(circle, #0c0117 100%, transparent 100%);
+  border-radius: 1486px;
+  filter: blur(167.60000610351562px);
+}
+
+.custom-input {
+  background-color: white !important;
+  border-radius: 14px;
+  box-shadow: 0px 10px 78px 1px rgba(121, 121, 121, 0.12);
+  div {
+    padding: 0;
+  }
+
+  input {
+    padding: 15px 20px;
+  }
+}
+
+@keyframes blick-slide {
+  from {
+    background-position-x: -250px;
+  }
+  to {
+    background-position-x: calc(100% + 250px);
+  }
+}
+
+.purchase-btn {
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(
+    -45deg,
+    transparent 0%,
+    transparent 49%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 70%
+  ) !important;
+  background-repeat: no-repeat !important;
+  animation: blick-slide infinite 4s;
+}
+
+.gradient-background {
+  /* height: 600px; */
+  background: linear-gradient(62deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* parallax */
+
+@keyframes parallaxMove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+
+.parallax-element {
+  position: absolute;
+  top: -88px;
+  right: 24px;
+  width: 368.221px;
+  height: 346.719px;
+  background: radial-gradient(circle, violet, transparent);
+  z-index: 0;
+  animation: parallaxMove 1s linear infinite;
+  animation-timeline: scroll();
+  scroll-timeline: auto;
+}

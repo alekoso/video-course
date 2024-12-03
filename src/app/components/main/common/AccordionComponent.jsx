@@ -7,11 +7,15 @@ import indicator from "../../../../../public/icons/arrow-circle-right.svg";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-export default function AccordionComponent({ data, variant }) {
+export default function AccordionComponent({
+  data,
+  variant,
+  defaultExpandedKeys = [],
+}) {
   const f = useTranslations("Free");
 
   return (
-    <Accordion className="accordion">
+    <Accordion className="accordion" defaultExpandedKeys={defaultExpandedKeys}>
       {data.map((item, index) => (
         <AccordionItem
           className="accordion-item p-[20px] md:px-[22px] md:py-8 rounded-xl mb-4 md:mb-[26px] border-gradient-rounded xs:min-w-[313px] relative
@@ -52,6 +56,9 @@ export default function AccordionComponent({ data, variant }) {
             <p className="mt-8">{item.answer}</p>
           ) : (
             <Tabs
+              defaultSelectedKey={
+                index === 6 ? String(item.tabs.length - 1) : "0"
+              }
               className="mt-[8px] md:mt-[32px] md:mb-[37px] tabs"
               variant="light"
               aria-label="Tabs"
@@ -74,8 +81,8 @@ export default function AccordionComponent({ data, variant }) {
                       )}
 
                       {free && (
-                        <mark className="absolute top-[-100%] -translate-y-1/2   right-[-9%] l:right-[-28%] rounded-[18419.209px] bg-textColorWhite shadow-[0_2px_4px_rgba(0, 0, 0, 0.25)_inset] border border-[#7375ff] py-[6px] px-[14.5px]">
-                          <div className="text-[8px] md:text-[10px] leadibg-[1.17] md:leadibg-[1.17] m-auto font-bold uppercase gradient-secondary-text text-center">
+                        <mark className="absolute top-[-70%] md:top-[-100%] -translate-y-1/2   left-[5%] l:right-[-94%] rounded-[18419.209px] bg-textColorWhite shadow-[0_2px_4px_rgba(0, 0, 0, 0.25)_inset] border border-[#7375ff] py-1 px-2 l:py-[6px] l:px-[14.5px]">
+                          <div className="text-[6px] md:text-[10px] leadibg-[1.17] md:leadibg-[1.17] m-auto font-bold uppercase gradient-secondary-text text-center">
                             {f("text")}
                           </div>
                         </mark>
@@ -83,15 +90,17 @@ export default function AccordionComponent({ data, variant }) {
                     </div>
                   }
                 >
-                  <div className="w-full h-[162px] xs:h-[260px] sm:h-[360px] md:h-[420px] l:h-[535px] rounded-[18px] overflow-hidden mx-auto">
-                    <ReactPlayer
-                      url={url}
-                      light="/image/preview2.png"
-                      width="100%"
-                      height="100%"
-                      controls
-                    />
-                  </div>
+                  {url && (
+                    <div className="w-full h-[162px] xs:h-[260px] sm:h-[360px] md:h-[420px] l:h-[535px] rounded-[18px] overflow-hidden mx-auto">
+                      <ReactPlayer
+                        url={url}
+                        light="/image/preview2.png"
+                        width="100%"
+                        height="100%"
+                        controls
+                      />
+                    </div>
+                  )}
                 </Tab>
               ))}
             </Tabs>

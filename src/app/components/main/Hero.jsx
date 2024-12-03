@@ -18,7 +18,7 @@ export default function Hero() {
   const t = useTranslations("Hero");
   return (
     <Container>
-      <div className="px-10 lg:pl-20 lg:pr-[60px] pt-6 lg:pt-16 pb-[76px] lg:pb-[200px] overflow-x-clip relative ">
+      <div className="px-10 lg:pl-20 lg:pr-[60px] pt-6 lg:pt-10 pb-[76px] lg:pb-[200px] overflow-x-clip relative ">
         <div className="w-[184.357px] h-[173.591px] radial-blue-gradient absolute bottom-[165px] left-[-55px] md:hidden" />
 
         <div className="w-[184.357px] h-[173.591px] radial-violet-gradient absolute top-[99px] right-[-10px] md:hidden" />
@@ -84,10 +84,10 @@ export default function Hero() {
           <PurchaseBtn buttonVariant="large" />
           <div className="flex items-center gap-[10px] lg:gap-4 mt-3 justify-center w-full">
             <p className="text-[#FF4A77] text-xl font-semibold leading-[1.08] lg:text-2xl lg:leading-normal">
-              1000 грн
+              99 $
             </p>
             <p className="text-[#C5C5C5] font-semibold text-sm line-through">
-              2000грн
+              200$
             </p>
           </div>
         </motion.div>

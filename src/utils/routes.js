@@ -17,24 +17,40 @@ export const routes = [
 
 // Ссылки, которые используются только в футере
 export const footerLinks = [
-  { name: "link1", path: "/" },
-  { name: "link2", path: "/" },
-  { name: "link3", path: "/" },
-  { name: "link4", path: "/" },
+  { name: "link1", path: "/legal-details" },
+  { name: "link2", path: "/individual-entrepreneur" },
+  { name: "link3", path: "/offer" },
+  { name: "link4", path: "/privacy-policy" },
 ];
 
 // Соц.сети
 
 export const socialLinks = [
-  { name: "Instagram", url: "https://instagram.com", icon: FaInstagram },
-  { name: "TikTok", url: "https://tiktok.com", icon: FaTiktok },
-  { name: "Telegram", url: "https://t.me", icon: FaTelegram },
-  { name: "YouTube", url: "https://youtube.com", icon: FaYoutube },
-  { name: "Email", url: "mailto:your-email@example.com", icon: FaEnvelope },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/aleko.so/",
+    icon: FaInstagram,
+  },
+  { name: "TikTok", url: "https://www.tiktok.com/@aleko.so", icon: FaTiktok },
+  { name: "Telegram", url: "https://www.t.me/aleko_ua", icon: FaTelegram },
+  {
+    name: "YouTube",
+    url: "https://www.youtube.com/@aleko_so/shorts",
+    icon: FaYoutube,
+  },
+  { name: "Email", url: "mailto:aleko.you@gmail.com", icon: FaEnvelope },
 ];
 
 export const socLinksAbout = [
-  { name: "Instagram", url: "https://instagram.com", icon: FaInstagram },
-  { name: "TikTok", url: "https://tiktok.com", icon: FaTiktok },
-  { name: "YouTube", url: "https://youtube.com", icon: FaYoutube },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/aleko.so/",
+    icon: FaInstagram,
+  },
+  { name: "TikTok", url: "https://www.tiktok.com/@aleko.so", icon: FaTiktok },
+  {
+    name: "YouTube",
+    url: "https://www.youtube.com/@aleko_so/shorts",
+    icon: FaYoutube,
+  },
 ];

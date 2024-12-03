@@ -28,7 +28,7 @@ export default function Header() {
       maxWidth="xl"
       shouldHideOnScroll
       onMenuOpenChange={setIsMenuOpen}
-      className="px-10 py-7 lg:pb-[7px] lg:px-20 md:pt-10 md:pb-4 custom-navbar max-w-[1280px] mx-auto"
+      className="px-10 py-7 lg:px-20 md:py-10 custom-navbar max-w-[1280px] mx-auto"
     >
       {/* Брендинг */}
       <NavbarContent>

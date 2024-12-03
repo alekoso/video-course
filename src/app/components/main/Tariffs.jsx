@@ -1,8 +1,11 @@
+"use client";
 import Container from "../../../utils/Container";
 import { useTranslations } from "next-intl";
 import PurchaseBtn from "./common/PurchaseBtn";
+import { useRouter } from "next/navigation";
 
 export default function Tariffs() {
+  const router = useRouter();
   const t = useTranslations("Tariffs");
 
   const basePoints = Object.values({
@@ -23,6 +26,11 @@ export default function Tariffs() {
     item3: t("expert.point3"),
     item4: t("expert.point4"),
   });
+
+  const handleClick = (plan) => {
+    localStorage.setItem("selectedPlan", plan);
+    router.push(`/payment`);
+  };
 
   return (
     <Container>
@@ -49,7 +57,7 @@ export default function Tariffs() {
                   99{"\u00A0"}$
                 </p>
                 <p className="font-manrope text-xl font-bold uppercase leading-[1.17] line-through">
-                  {"\u00A0\u00A0"}139${"\u00A0\u00A0"}
+                  {"\u00A0\u00A0"}200${"\u00A0\u00A0"}
                 </p>
               </div>
 
@@ -66,6 +74,9 @@ export default function Tariffs() {
             </div>
 
             <PurchaseBtn
+              onClick={() => {
+                handleClick("base");
+              }}
               discount={false}
               buttonVariant="small"
               btnBg="#fff"
@@ -98,7 +109,7 @@ export default function Tariffs() {
                   149{"\u00A0"}$
                 </p>
                 <p className="font-manrope text-xl font-bold uppercase leading-[1.17] line-through">
-                  {"\u00A0\u00A0"}199${"\u00A0\u00A0"}
+                  {"\u00A0\u00A0"}300${"\u00A0\u00A0"}
                 </p>
               </div>
 
@@ -115,6 +126,9 @@ export default function Tariffs() {
             </div>
 
             <PurchaseBtn
+              onClick={() => {
+                handleClick("pro");
+              }}
               discount={false}
               buttonVariant="small"
               btnBg="#0C0117"
@@ -157,7 +171,13 @@ export default function Tariffs() {
               </ul>
             </div>
 
-            <PurchaseBtn discount={false} buttonVariant="small" />
+            <PurchaseBtn
+              onClick={() => {
+                handleClick("expert");
+              }}
+              discount={false}
+              buttonVariant="small"
+            />
           </li>
         </ul>
       </div>

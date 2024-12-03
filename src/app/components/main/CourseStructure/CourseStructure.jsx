@@ -7,6 +7,7 @@ export default function CourseStructure() {
   const t = useTranslations("CourseStructure");
 
   const modules = useModules();
+  const defaultExpandedKeys = ["6"];
 
   return (
     <Container>
@@ -15,7 +16,10 @@ export default function CourseStructure() {
           {t("title")}
         </h2>
 
-        <AccordionComponent data={modules} />
+        <AccordionComponent
+          data={modules}
+          defaultExpandedKeys={defaultExpandedKeys}
+        />
       </div>
     </Container>
   );

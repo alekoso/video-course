@@ -232,7 +232,7 @@ export const useModules = () => {
           name: t("module7.tabs.tab1.name"),
           url: t("module7.tabs.tab1.url"),
           pro: false,
-          free: true,
+          free: false,
         },
         {
           name: t("module7.tabs.tab2.name"),
@@ -256,7 +256,7 @@ export const useModules = () => {
           name: t("module7.tabs.tab5.name"),
           url: t("module7.tabs.tab5.url"),
           pro: false,
-          free: false,
+          free: true,
         },
       ],
     },

@@ -45,9 +45,10 @@ const SelectLang = () => {
         onSelectionChange={onChange}
         aria-label="Select Language"
         className="select"
+        classNames={{ popoverContent: "bg-background" }}
       >
         {options.map(({ value, label }) => (
-          <SelectItem key={value} value={value}>
+          <SelectItem key={value} value={value} endContent={""}>
             {label}
           </SelectItem>
         ))}

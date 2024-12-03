@@ -10,6 +10,7 @@ export default function PurchaseBtn({
   textColor = "#0C0117",
   discount = true,
   isBlicking = false,
+  onClick,
 }) {
   const t = useTranslations("ModalBtn");
   const f = useTranslations("Tariffs");
@@ -56,7 +57,12 @@ export default function PurchaseBtn({
     <>
       <Button
         onClick={() => {
-          discount && router.push("/payment");
+          if (discount) {
+            localStorage.setItem("selectedPlan", "base");
+            router.push("/payment");
+          } else {
+            onClick();
+          }
         }}
         style={{ backgroundColor: btnBg, color: textColor }}
         className={`${buttonClasses} ${isBlicking ? "purchase-btn" : ""}`}
@@ -99,10 +105,10 @@ export default function PurchaseBtn({
       {buttonVariant === "largeGradient" && (
         <div className="flex items-center gap-4">
           <p className="text-[#FF4A77] text-xl font-semibold leading-[1.84] lg:text-2xl lg:leading-[1.53]">
-            1000 грн
+            99 $
           </p>
           <p className="text-[#959595] font-semibold text-sm line-through leading-[2.63] md:text-base md:leading-[2.3]">
-            2000грн
+            200$
           </p>
         </div>
       )}

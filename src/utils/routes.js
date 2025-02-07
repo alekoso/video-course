@@ -8,11 +8,11 @@ import {
 
 // Основные ссылки для хедера, бургера и других общих компонентов
 export const routes = [
-  { name: "nav1", path: "/#structure" },
-  { name: "nav2", path: "/#about" },
-  { name: "nav3", path: "/#advantages" },
-  { name: "nav4", path: "/#reviews" },
-  { name: "nav5", path: "/#faq" },
+  { name: "nav1", path: "#structure" },
+  { name: "nav2", path: "#about" },
+  { name: "nav3", path: "#advantages" },
+  { name: "nav4", path: "#reviews" },
+  { name: "nav5", path: "#faq" },
 ];
 
 // Ссылки, которые используются только в футере

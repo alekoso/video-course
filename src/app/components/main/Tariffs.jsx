@@ -11,6 +11,8 @@ export default function Tariffs() {
   const basePoints = Object.values({
     item1: t("base.point1"),
     item2: t("base.point2"),
+    item3: t("base.point3"),
+    item4: t("base.point4"),
   });
 
   const proPoints = Object.values({
@@ -34,13 +36,13 @@ export default function Tariffs() {
 
   return (
     <Container>
-      <div className="px-10 l:px-20 pb-[76px] l:pb-[200px]">
+      <div id="tariffs" className="px-10 l:px-20 pb-[76px] l:pb-[200px]">
         <h2 className="mb-7 l:mb-[79px] uppercase font-bold text-2xl leading-[1.17] md:text-4xl md:leading-[1.17] l:text-5xl l:leading-[1.17] text-center mx-auto">
           {t("title")}
         </h2>
 
         <ul className="flex flex-col md:flex-row md:flex-wrap justify-center items-center md:gap-[26px] l:gap-5">
-          <li className="p-8 px-6 lg:px-9 lg:pt-9 rounded-[28px] w-[313px] h-[467px] l:h-[465px] lg:w-[360px] shadow-[4px_6px_10px_4px_rgba(167,93,243,0.20)_inset] relative overflow-hidden mb-[47px] md:mb-0 flex flex-col justify-between">
+          <li className="p-8 px-6 lg:px-9 lg:pt-9 rounded-[28px] w-[313px] h-[467px] l:h-[465px] lg:w-[360px] shadow-[4px_6px_10px_4px_rgba(167,93,243,0.20)_inset] relative overflow-hidden mb-[47px] md:mb-0 flex flex-col justify-between bg-gradient-to-r from-[#2C3E50] to-[#1ABC9C]">
             {/* gradient */}
             <div className="w-[184.357px] h-[173.591px] radial-violet-gradient absolute top-[-67px] right-[-162px] " />
 
@@ -48,7 +50,7 @@ export default function Tariffs() {
             {/* /gradient */}
 
             <div>
-              <h3 className="text-textColorWhite uppercase font-semibold text-base leading-[1.17] lg:text-xl lg:leading-[1.17] mb-[29px] lg:mb-[33px]">
+              <h3 className="text-textColorWhite uppercase font-semibold text-base leading-[1.17] lg:text-xl lg:leading-[1.17] mb-[29px] lg:mb-[33px] pt-2">
                 {t("base.title")}
               </h3>
 

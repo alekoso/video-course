@@ -23,7 +23,9 @@
   "VideoSection": {
     "item1": "модулей",
     "item2": "видео",
-    "item3": "рабочие компоненты"
+    "item3": "рабочие компоненты",
+    "urlDesk":"https://www.youtube.com/watch?v=TxAwBZ89rfg&feature=youtu.be",
+    "urlMob":"https://www.youtube.com/shorts/tOeC58IW5X0"
   },
   "IfYouWantSection": {
     "title": "Если вы хотите:",
@@ -335,8 +337,10 @@
     "title": "Тарифы",
     "base": {
       "title": "Базовый",
-      "point1": "Базовый курс",
-      "point2": "38 уроков"
+      "point1": "Основной курс",
+      "point2": "38 уроков",
+      "point3": "Доступ навсегда",
+      "point4": "Удобная платформа"
     },
     "pro": {
       "title": "Продвинутий",

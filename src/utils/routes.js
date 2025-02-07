@@ -19,8 +19,14 @@ export const routes = [
 export const footerLinks = [
   { name: "link1", path: "/legal-details" },
   { name: "link2", path: "/individual-entrepreneur" },
-  { name: "link3", path: "/offer" },
-  { name: "link4", path: "/privacy-policy" },
+  {
+    name: "link3",
+    path: "(https://www.notion.so/19041afa825280cc96f6e6bf6b4d690a?pvs=21",
+  },
+  {
+    name: "link4",
+    path: "https://www.notion.so/19041afa8252805d95d3ca2124af1e9b?pvs=21y",
+  },
 ];
 
 // Соц.сети

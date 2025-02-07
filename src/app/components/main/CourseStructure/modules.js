@@ -18,7 +18,7 @@ export const useModules = () => {
         {
           name: t("module1.tabs.tab2.name"),
           url: t("module1.tabs.tab2.url"),
-          pro: true,
+          pro: false,
           free: false,
         },
         {
@@ -48,7 +48,7 @@ export const useModules = () => {
         {
           name: t("module2.tabs.tab3.name"),
           url: t("module2.tabs.tab3.url"),
-          pro: false,
+          pro: true,
           free: false,
         },
       ],
@@ -62,11 +62,13 @@ export const useModules = () => {
           name: t("module3.tabs.tab1.name"),
           url: t("module3.tabs.tab1.url"),
           free: false,
+          pro: true,
         },
         {
           name: t("module3.tabs.tab2.name"),
           url: t("module3.tabs.tab2.url"),
           free: false,
+          pro: true,
         },
       ],
     },
@@ -183,6 +185,7 @@ export const useModules = () => {
           url: t("module5.tabs.tab2.url"),
           pro: false,
           free: false,
+          pro: true,
         },
         {
           name: t("module5.tabs.tab3.name"),
@@ -220,6 +223,7 @@ export const useModules = () => {
           url: t("module6.tabs.tab4.url"),
           pro: false,
           free: false,
+          pro: true,
         },
       ],
     },
@@ -305,7 +309,7 @@ export const useModules = () => {
         {
           name: t("module9.tabs.tab3.name"),
           url: t("module9.tabs.tab3.url"),
-          pro: false,
+          pro: true,
           free: false,
         },
       ],
@@ -324,7 +328,7 @@ export const useModules = () => {
         {
           name: t("module10.tabs.tab2.name"),
           url: t("module10.tabs.tab2.url"),
-          pro: false,
+          pro: true,
           free: false,
         },
       ],
@@ -343,7 +347,7 @@ export const useModules = () => {
         {
           name: t("module11.tabs.tab2.name"),
           url: t("module11.tabs.tab2.url"),
-          pro: false,
+          pro: true,
           free: false,
         },
       ],

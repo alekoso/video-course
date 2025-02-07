@@ -38,6 +38,8 @@ export default function Footer() {
             {footerLinks.map((link, index) => (
               <li key={index}>
                 <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href={link.path}
                   className="hover:underline transition-all duration-300 ease-in-out"
                 >

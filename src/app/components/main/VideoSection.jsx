@@ -47,6 +47,19 @@ const Counter = ({ targetNumber, duration = 4 }) => {
 export default function VideoSection() {
   const t = useTranslations("VideoSection");
 
+  const [videoUrl, setVideoUrl] = useState("");
+
+  useEffect(() => {
+    const handleResize = () => {
+      setVideoUrl(window.innerWidth <= 660 ? t("urlMob") : t("urlDesk"));
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [t]);
+
   const items = Object.values({
     item1: {
       text: t("item1"),
@@ -75,7 +88,7 @@ export default function VideoSection() {
             {/* відео */}
             <div className="w-full h-[369px] sm:h-[458px] rounded-[18px] overflow-hidden">
               <ReactPlayer
-                url="https://youtu.be/XXACgGVld_E?si=JuNlGnhQ_yvIWl5C"
+                url={videoUrl}
                 light="/image/preview.png"
                 width="100%"
                 height="100%"

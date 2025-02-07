@@ -90,16 +90,21 @@ export default function CoursePurchase() {
                 className="text-base font-semibold custom-input"
               />
 
-              <Input
-                radius="sm"
-                isRequired
-                placeholder="Email"
-                value={formData.email}
-                onChange={(e) => handleChange("email", e.target.value)}
-                size="lg"
-                className={`text-base font-semibold custom-input`}
-                status={emailError ? "error" : "default"}
-              />
+              <div className="relative">
+                <Input
+                  radius="sm"
+                  isRequired
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={(e) => handleChange("email", e.target.value)}
+                  size="lg"
+                  className={`text-base font-semibold custom-input`}
+                  status={emailError ? "error" : "default"}
+                />
+                <span className="text-red-500 text-xl absolute left-2 top-3">
+                  *
+                </span>
+              </div>
             </div>
           </div>
           <div>

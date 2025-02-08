@@ -26,7 +26,13 @@ export default function HowCreateContent() {
           {/* /text */}
 
           <div className="w-[268px] md:w-[534px] flex flex-col items-center gap-[10px]">
-            <PurchaseBtn textColor="#fff" buttonVariant="largeGradient" />
+            <PurchaseBtn
+              textColor="#fff"
+              buttonVariant="largeGradient"
+              discount={false}
+              toTariff
+              showPrice={false}
+            />
           </div>
         </div>
         <hr className="absolute w-full h-[1px] border-0 gradient-to-right bottom-0 max-w-[1280px]"></hr>

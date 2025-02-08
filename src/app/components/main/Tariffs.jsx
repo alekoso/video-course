@@ -86,7 +86,7 @@ export default function Tariffs() {
             />
           </li>
 
-          <li className="p-8 px-6 lg:px-9 lg:pt-9 rounded-[28px] w-[313px] h-[467px] l:h-[465px] lg:w-[360px] shadow-[4px_6px_10px_4px_rgba(167,93,243,0.20)_inset] relative mb-[26px] md:mb-0 flex flex-col justify-between bg-textColorWhite text-textColorBlack gradient-background">
+          <li className="p-8 px-6 lg:px-9 lg:pt-9 rounded-[28px] w-[313px] h-[467px] l:h-[465px] lg:w-[360px] shadow-[4px_6px_10px_4px_rgba(167,93,243,0.20)_inset] relative mb-[26px] md:mb-0 flex flex-col justify-between bg-textColorWhite text-textColorBlack gradient-background-card">
             {/* Best seller */}
             <div className="absolute top-[-21px] right-[50%] transform translate-x-1/2  h-[42px] w-[169px] gradient-diagonal flex justify-center items-center rounded-[18px] shadow-[0px_4px_16px_1px_rgba(0,0,0,0.25)]">
               <p className="text-textColorWhite uppercase text-base leading-[1.17] font-bold">

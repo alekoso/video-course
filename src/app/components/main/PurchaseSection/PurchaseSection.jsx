@@ -35,7 +35,13 @@ export default function PurchaseSection() {
                 </p>
 
                 <div className="w-[268px] md:w-[534px] flex flex-col items-center gap-[10px] mx-auto">
-                  <PurchaseBtn textColor="#fff" buttonVariant="largeGradient" />
+                  <PurchaseBtn
+                    textColor="#fff"
+                    buttonVariant="largeGradient"
+                    discount={false}
+                    toTariff
+                    showPrice={false}
+                  />
                 </div>
               </div>
 

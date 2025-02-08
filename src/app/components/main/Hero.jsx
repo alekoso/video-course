@@ -13,10 +13,8 @@ import {
   subtitleAnimation,
   titleAnimation,
 } from "../../../app/helpers/animation";
-import { useRouter } from "next/navigation";
 
 export default function Hero() {
-  const router = useRouter();
   const t = useTranslations("Hero");
   return (
     <Container>
@@ -83,13 +81,7 @@ export default function Hero() {
           animate="visible"
           className="mt-[276px] xs:mt-[260px] sm:mt-[130px] md:mt-[42px] flex flex-col items-center md:items-start md:max-w-[50%] lg:w-[46.5%]"
         >
-          <PurchaseBtn
-            buttonVariant="large"
-            discount={false}
-            onClick={() => {
-              router.push("/#tariffs");
-            }}
-          />
+          <PurchaseBtn buttonVariant="large" discount={false} toTariff />
           <div className="flex items-center gap-[10px] lg:gap-4 mt-3 justify-center w-full">
             <p className="text-[#FF4A77] text-xl font-semibold leading-[1.08] lg:text-2xl lg:leading-normal">
               99 $

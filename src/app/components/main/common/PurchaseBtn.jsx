@@ -11,6 +11,8 @@ export default function PurchaseBtn({
   discount = true,
   isBlicking = false,
   onClick,
+  toTariff,
+  showPrice = true,
 }) {
   const t = useTranslations("ModalBtn");
   const f = useTranslations("Tariffs");
@@ -60,6 +62,8 @@ export default function PurchaseBtn({
           if (discount) {
             localStorage.setItem("selectedPlan", "base");
             router.push("/payment");
+          } else if (toTariff) {
+            router.push("/#tariffs");
           } else {
             onClick();
           }
@@ -102,7 +106,7 @@ export default function PurchaseBtn({
           </motion.div>
         )}
       </Button>
-      {buttonVariant === "largeGradient" && (
+      {buttonVariant === "largeGradient" && showPrice && (
         <div className="flex items-center gap-4">
           <p className="text-[#FF4A77] text-xl font-semibold leading-[1.84] lg:text-2xl lg:leading-[1.53]">
             99 $

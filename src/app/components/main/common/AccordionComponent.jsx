@@ -94,10 +94,17 @@ export default function AccordionComponent({
                     <div className="w-full h-[162px] xs:h-[260px] sm:h-[360px] md:h-[420px] l:h-[535px] rounded-[18px] overflow-hidden mx-auto">
                       <ReactPlayer
                         url={url}
-                        light="/image/preview2.png"
                         width="100%"
                         height="100%"
                         controls
+                        config={{
+                          youtube: {
+                            modestbranding: 1,
+                            controls: 1,
+                            rel: 0,
+                            playerVars: { showinfo: 0 },
+                          },
+                        }}
                       />
                     </div>
                   )}

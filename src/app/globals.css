@@ -439,6 +439,34 @@ a {
   }
 }
 
+.gradient-background-card {
+  background: linear-gradient(62deg, #ee7752, #e73c7e, #f73152, #ffde05);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* parallax */
 
 @keyframes parallaxMove {
@@ -461,4 +489,8 @@ a {
   animation: parallaxMove 1s linear infinite;
   animation-timeline: scroll();
   scroll-timeline: auto;
+}
+
+.test .ytp-title {
+  display: none !important;
 }

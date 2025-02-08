@@ -89,10 +89,17 @@ export default function VideoSection() {
             <div className="w-full h-[369px] sm:h-[458px] rounded-[18px] overflow-hidden">
               <ReactPlayer
                 url={videoUrl}
-                light="/image/preview.png"
                 width="100%"
                 height="100%"
                 controls
+                config={{
+                  youtube: {
+                    modestbranding: 1,
+                    controls: 1,
+                    rel: 0,
+                    playerVars: { showinfo: 0 },
+                  },
+                }}
               />
             </div>
             {/* текстовий блок */}

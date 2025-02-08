@@ -9,6 +9,7 @@ body {
   font-weight: 400;
   line-height: normal;
   font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {

@@ -322,7 +322,7 @@ export const useModules = () => {
         {
           name: t("module10.tabs.tab1.name"),
           url: t("module10.tabs.tab1.url"),
-          pro: false,
+          pro: true,
           free: false,
         },
         {
@@ -341,7 +341,7 @@ export const useModules = () => {
         {
           name: t("module11.tabs.tab1.name"),
           url: t("module11.tabs.tab1.url"),
-          pro: false,
+          pro: true,
           free: false,
         },
         {

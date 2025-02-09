@@ -50,7 +50,7 @@ const sansation = localFont({
 });
 
 export default async function RootLayout({ children, params }) {
-  const { locale } = params;
+  const { locale } = await params;
   const messages = await getMessages();
 
   const metadata = await generateMetadata({ params });

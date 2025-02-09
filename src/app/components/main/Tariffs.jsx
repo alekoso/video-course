@@ -100,7 +100,7 @@ export default function Tariffs() {
                   {t("pro.title")}
                 </h3>
                 <div className="bg-textColorBlack rounded-[30px] py-[10px] px-[34px] lg:w-[119px]">
-                  <p className="gradient-secondary-text text-base leading-[1.17] uppercase font-bold">
+                  <p className="gradient-secondary-text text-base text-center leading-[1.17] uppercase font-bold">
                     PRO
                   </p>
                 </div>

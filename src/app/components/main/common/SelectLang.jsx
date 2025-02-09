@@ -1,6 +1,6 @@
 import { Select, SelectItem } from "@nextui-org/react";
 import { useLocale } from "next-intl";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 
 const options = [
@@ -17,6 +17,7 @@ const options = [
 const SelectLang = () => {
   const router = useRouter();
   const localeActive = useLocale();
+  const pathname = usePathname();
 
   const [currentLanguage, setCurrentLanguage] = useState(new Set([]));
   const [isPending, setIsPending] = useState(false);
@@ -31,7 +32,7 @@ const SelectLang = () => {
     if (newValue) {
       setIsPending(true);
       const language = Array.from(newValue)[0];
-      router.replace(`/${language}`);
+      router.replace(`/${language}${pathname.replace(/^\/\w{2}/, "")}`);
       setCurrentLanguage(new Set([language]));
       setIsPending(false);
     }

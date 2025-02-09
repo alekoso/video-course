@@ -74,7 +74,7 @@ export default function Header() {
           <SelectLang />
         </NavbarItem>
         <NavbarItem className="hidden l:flex">
-          <PurchaseBtn textColor="#fff" />
+          <PurchaseBtn textColor="#fff" toTariff discount={false} />
         </NavbarItem>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}

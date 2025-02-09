@@ -11,7 +11,7 @@ export const routes = [
   { name: "nav1", path: "/#structure" },
   { name: "nav2", path: "/#about" },
   { name: "nav3", path: "/#advantages" },
-  { name: "nav4", path: "/#reviews" },
+  // { name: "nav4", path: "/#reviews" },
   { name: "nav5", path: "/#faq" },
 ];
 

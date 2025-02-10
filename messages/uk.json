@@ -24,8 +24,8 @@
     "item1": "модулів",
     "item2": "відео",
     "item3": "робочі компоненти",
-    "urlDesk": "https://www.youtube.com/watch?v=rFbEMOHnPZ8&feature=youtu.be",
-    "urlMob": "https://www.youtube.com/shorts/GnoUcglMfS8"
+    "urlDesk": "https://vimeo.com/1055160051/d73d32fa6c",
+    "urlMob": "https://vimeo.com/1055159880/58eb87caf6"
   },
   "IfYouWantSection": {
     "title": "Якщо ви хочете:",
@@ -229,23 +229,23 @@
       "tabs": {
         "tab1": {
           "name": "Введення в продакшн",
-          "url": "https://youtu.be/4UlcxLOPsfU?si=IHtYS6C5wSo1-QTh"
+          "url": "https://vimeo.com/1055165926/ae3b19573d"
         },
         "tab2": {
           "name": "Світло",
-          "url": "https://youtu.be/4UlcxLOPsfU?si=IHtYS6C5wSo1-QTh"
+          "url": "https://vimeo.com/1055165926/ae3b19573d"
         },
         "tab3": {
           "name": "Камера",
-          "url": "https://youtu.be/4UlcxLOPsfU?si=IHtYS6C5wSo1-QTh"
+          "url": "https://vimeo.com/1055165926/ae3b19573d"
         },
         "tab4": {
           "name": "Звук",
-          "url": "https://youtu.be/4UlcxLOPsfU?si=IHtYS6C5wSo1-QTh"
+          "url": "https://vimeo.com/1055165926/ae3b19573d"
         },
         "tab5": {
           "name": "Зйомка",
-          "url": "https://youtu.be/4UlcxLOPsfU?si=IHtYS6C5wSo1-QTh"
+          "url": "https://vimeo.com/1055165926/ae3b19573d"
         }
       }
     },

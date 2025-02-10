@@ -24,8 +24,8 @@
     "item1": "модулей",
     "item2": "видео",
     "item3": "рабочие компоненты",
-    "urlDesk": "https://www.youtube.com/watch?v=TxAwBZ89rfg&feature=youtu.be",
-    "urlMob": "https://www.youtube.com/shorts/tOeC58IW5X0"
+    "urlDesk": "https://vimeo.com/1055159961/bb8970db23",
+    "urlMob": "https://vimeo.com/1055159732/34af69ade4"
   },
   "IfYouWantSection": {
     "title": "Если вы хотите:",
@@ -233,19 +233,19 @@
         },
         "tab2": {
           "name": "Свет",
-          "url": "https://youtu.be/4UlcxLOPsfU?si=IHtYS6C5wSo1-QTh"
+          "url": "https://vimeo.com/1055166129/425b77dbb1"
         },
         "tab3": {
           "name": "Камера",
-          "url": "https://youtu.be/4UlcxLOPsfU?si=IHtYS6C5wSo1-QTh"
+          "url": "https://vimeo.com/1055166129/425b77dbb1"
         },
         "tab4": {
           "name": "Звук",
-          "url": "https://youtu.be/4UlcxLOPsfU?si=IHtYS6C5wSo1-QTh"
+          "url": "https://vimeo.com/1055166129/425b77dbb1"
         },
         "tab5": {
           "name": "Съемка",
-          "url": "https://youtu.be/4UlcxLOPsfU?si=IHtYS6C5wSo1-QTh"
+          "url": "https://vimeo.com/1055166129/425b77dbb1"
         }
       }
     },

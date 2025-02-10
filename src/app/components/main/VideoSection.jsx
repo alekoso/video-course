@@ -51,7 +51,7 @@ export default function VideoSection() {
 
   useEffect(() => {
     const handleResize = () => {
-      setVideoUrl(window.innerWidth <= 660 ? t("urlMob") : t("urlDesk"));
+      setVideoUrl(window.innerWidth <= 550 ? t("urlMob") : t("urlDesk"));
     };
 
     handleResize();
@@ -86,20 +86,20 @@ export default function VideoSection() {
         <div className="px-10 lg:px-20 pb-[76px] lg:pb-[200px]">
           <div className="flex flex-col gap-6 md:flex-row-reverse md:gap-5 md:justify-between relative z-10">
             {/* відео */}
-            <div className="w-full h-[369px] sm:h-[458px] rounded-[18px] overflow-hidden">
+            <div className="w-full h-[569px] sm:h-[458px] rounded-[18px] overflow-hidden">
               <ReactPlayer
                 url={videoUrl}
                 width="100%"
                 height="100%"
                 controls
-                config={{
-                  youtube: {
-                    modestbranding: 1,
-                    controls: 1,
-                    rel: 0,
-                    playerVars: { showinfo: 0 },
-                  },
-                }}
+                // config={{
+                //   youtube: {
+                //     modestbranding: 1,
+                //     controls: 1,
+                //     rel: 0,
+                //     playerVars: { showinfo: 0 },
+                //   },
+                // }}
               />
             </div>
             {/* текстовий блок */}

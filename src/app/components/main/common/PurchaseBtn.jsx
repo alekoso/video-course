@@ -61,11 +61,12 @@ export default function PurchaseBtn({
         onClick={() => {
           if (discount) {
             localStorage.setItem("selectedPlan", "base");
-            router.push("/payment");
+            // router.push("/payment");
           } else if (toTariff) {
             router.push("/#tariffs");
           } else {
-            onClick();
+            // onClick();
+            return;
           }
         }}
         style={{ backgroundColor: btnBg, color: textColor }}

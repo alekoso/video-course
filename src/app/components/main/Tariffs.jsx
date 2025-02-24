@@ -3,6 +3,7 @@ import Container from "../../../utils/Container";
 import { useTranslations } from "next-intl";
 import PurchaseBtn from "./common/PurchaseBtn";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Tariffs() {
   const router = useRouter();
@@ -29,10 +30,10 @@ export default function Tariffs() {
     item4: t("expert.point4"),
   });
 
-  const handleClick = (plan) => {
-    localStorage.setItem("selectedPlan", plan);
-    router.push(`/payment`);
-  };
+  // const handleClick = (plan) => {
+  //   localStorage.setItem("selectedPlan", plan);
+  //   router.push(`/payment`);
+  // };
 
   return (
     <Container>
@@ -74,16 +75,21 @@ export default function Tariffs() {
                 ))}
               </ul>
             </div>
-
-            <PurchaseBtn
-              onClick={() => {
-                handleClick("base");
-              }}
-              discount={false}
-              buttonVariant="small"
-              btnBg="#fff"
-              textColor="#0C0117"
-            />
+            <Link
+              href={t("base.link")}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <PurchaseBtn
+                // onClick={() => {
+                //   handleClick("base");
+                // }}
+                discount={false}
+                buttonVariant="small"
+                btnBg="#fff"
+                textColor="#0C0117"
+              />
+            </Link>
           </li>
 
           <li className="p-8 px-6 lg:px-9 lg:pt-9 rounded-[28px] w-[313px] h-[467px] l:h-[465px] lg:w-[360px] shadow-[4px_6px_10px_4px_rgba(167,93,243,0.20)_inset] relative mb-[26px] md:mb-0 flex flex-col justify-between bg-textColorWhite text-textColorBlack gradient-background-card">
@@ -127,16 +133,22 @@ export default function Tariffs() {
               </ul>
             </div>
 
-            <PurchaseBtn
-              onClick={() => {
-                handleClick("pro");
-              }}
-              discount={false}
-              buttonVariant="small"
-              btnBg="#0C0117"
-              textColor="#fff"
-              isBlicking={true}
-            />
+            <Link
+              href={t("pro.link")}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <PurchaseBtn
+                // onClick={() => {
+                //   handleClick("pro");
+                // }}
+                discount={false}
+                buttonVariant="small"
+                btnBg="#0C0117"
+                textColor="#fff"
+                isBlicking={true}
+              />
+            </Link>
           </li>
 
           <li className="p-8 px-6 lg:px-9 lg:pt-9 rounded-[28px] w-[313px] h-[467px] l:h-[465px] lg:w-[360px] shadow-[4px_6px_10px_4px_rgba(167,93,243,0.20)_inset] gradient-tariff flex flex-col justify-between">
@@ -173,13 +185,19 @@ export default function Tariffs() {
               </ul>
             </div>
 
-            <PurchaseBtn
-              onClick={() => {
-                handleClick("expert");
-              }}
-              discount={false}
-              buttonVariant="small"
-            />
+            <Link
+              href={t("expert.link")}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <PurchaseBtn
+                // onClick={() => {
+                //   handleClick("expert");
+                // }}
+                discount={false}
+                buttonVariant="small"
+              />
+            </Link>
           </li>
         </ul>
       </div>

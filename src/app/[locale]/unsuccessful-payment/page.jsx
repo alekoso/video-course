@@ -19,7 +19,7 @@ export default function UnsuccessfulPayment() {
       {/* /Градієнти md */}
 
       <Container>
-        <div className="pt-8 pb-8 l:pt-[94px] l:pb-[200px] px-[38px] md:px-0 relative z-1 flex flex-col justify-between gap-9 min-h-[80vh] items-center mx-auto">
+        <div className="pt-8 pb-8 l:pt-[94px] l:pb-[200px] px-[38px] md:px-0 relative z-1 flex flex-col gap-12 justify-center min-h-[80vh] items-center mx-auto">
           <div>
             <h2 className="text-2xl md:text-[32px] leading-[1.17] font-bold uppercase text-center mb-5">
               {t("title")}
@@ -28,13 +28,7 @@ export default function UnsuccessfulPayment() {
               {t("description")}
             </p>
           </div>
-          <Image
-            src={like}
-            alt="like icon"
-            width={201}
-            height={205}
-            className="md:w-[212px] md:h-[216px] mx-auto"
-          />
+
           <div>
             {/* <p className="text-base leading-[1.17] font-semibold mb-[35px] md:mb-6 text-center">
               {t("info")}
@@ -42,7 +36,7 @@ export default function UnsuccessfulPayment() {
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href={"https://www.t.me/aleko_ua"}
+              href={"https://www.t.me/aleko_help"}
               className="gradient-to-right rounded-[9999px] w-[317px] h-[50px] flex justify-center items-center mx-auto"
             >
               {t("btn")}

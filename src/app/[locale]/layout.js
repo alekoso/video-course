@@ -88,7 +88,7 @@ export default async function RootLayout({ children, params }) {
           href="/apple-touch-icon.png"
         />
         <meta name="apple-mobile-web-app-title" content="Секр. видео" />
-        <link rel="manifest" href="/site.webmanifest" />
+        {/* <link rel="manifest" href="/site.webmanifest" /> */}
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="icon" href="/icons/favicon.ico" />

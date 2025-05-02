@@ -79,6 +79,7 @@ export default function Tariffs() {
               href={t("base.link")}
               target="_blank"
               rel="noopener noreferrer"
+              id="buy1"
             >
               <PurchaseBtn
                 // onClick={() => {
@@ -137,6 +138,7 @@ export default function Tariffs() {
               href={t("pro.link")}
               target="_blank"
               rel="noopener noreferrer"
+              id="buy2"
             >
               <PurchaseBtn
                 // onClick={() => {
@@ -189,6 +191,7 @@ export default function Tariffs() {
               href={t("expert.link")}
               target="_blank"
               rel="noopener noreferrer"
+              id="buy3"
             >
               <PurchaseBtn
                 // onClick={() => {

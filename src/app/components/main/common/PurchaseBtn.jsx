@@ -71,6 +71,7 @@ export default function PurchaseBtn({
         }}
         style={{ backgroundColor: btnBg, color: textColor }}
         className={`${buttonClasses} ${isBlicking ? "purchase-btn" : ""}`}
+        id="purchaseScroll"
       >
         <motion.div
           className="inline-flex items-center"

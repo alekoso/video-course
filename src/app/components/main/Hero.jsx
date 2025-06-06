@@ -48,7 +48,7 @@ export default function Hero() {
           </motion.div>
 
           <div>
-            <div className="absolute flex flex-col gap-8 sm:gap-2 md:flex-col-reverse md:gap-[42px] top-[77.5%] left-[-15px] xs:top-[71.5%] md:top-[10%] md:left-[96%] l:left-[89%] lg:top-[18%]">
+            <div className="absolute flex flex-col gap-3 md:flex-col-reverse md:gap-[42px] top-[77.5%] left-[-15px] xs:top-[71.5%] md:top-[10%] md:left-[96%] l:left-[89%] lg:top-[18%]">
               <motion.div
                 variants={titleAnimation}
                 initial="hidden"
@@ -79,7 +79,7 @@ export default function Hero() {
           variants={buttonVariants}
           initial="hidden"
           animate="visible"
-          className="mt-[276px] xs:mt-[260px] sm:mt-[130px] md:mt-[42px] flex flex-col items-center md:items-start md:max-w-[50%] lg:w-[46.5%]"
+          className="mt-[240px] xs:mt-[220px] sm:mt-[150px] md:mt-[42px] flex flex-col items-center md:items-start md:max-w-[50%] lg:w-[46.5%]"
         >
           <PurchaseBtn buttonVariant="large" discount={false} toTariff />
           <div className="flex items-center gap-[10px] lg:gap-4 mt-3 justify-center w-full">

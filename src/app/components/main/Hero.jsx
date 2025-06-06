@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import Container from "../../../utils/Container";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import heroMob from "../../../../public/image/hero/hero-mob.png";
-import heroDesk from "../../../../public/image/hero/hero-desk.png";
+import heroMob from "../../../../public/image/hero/hero-mob.webp";
+import heroDesk from "../../../../public/image/hero/hero-desk.webp";
 import PurchaseBtn from "../main/common/PurchaseBtn";
 import {
   buttonVariants,
@@ -34,7 +34,7 @@ export default function Hero() {
               alt="Aleko Sokurashvili"
               sizes="100vh"
               priority
-              className="w-full h-auto md:hidden"
+              className="w-[313px] h-auto object-cover object-center  mx-auto rounded-[18px] md:hidden"
               quality={100}
             />
             <Image
@@ -42,13 +42,13 @@ export default function Hero() {
               alt="Aleko Sokurashvili"
               sizes="100vh"
               priority
-              className="w-full h-auto hidden md:flex"
+              className="w-full h-auto object-cover object-center rounded-[18px] hidden md:flex"
               quality={100}
             />
           </motion.div>
 
           <div>
-            <div className="absolute flex flex-col gap-8 md:flex-col-reverse md:gap-[42px] top-[77.5%] md:top-[10%] md:left-[96%] l:left-[89%] lg:top-[18%]">
+            <div className="absolute flex flex-col gap-8 sm:gap-2 md:flex-col-reverse md:gap-[42px] top-[77.5%] left-[-15px] xs:top-[71.5%] md:top-[10%] md:left-[96%] l:left-[89%] lg:top-[18%]">
               <motion.div
                 variants={titleAnimation}
                 initial="hidden"
@@ -57,7 +57,7 @@ export default function Hero() {
                 <p className="gradient-secondary-text font-bold text-[20.926px] mb-1 md:mb-4 text-center md:text-start lg:text-[32px]">
                   {t("colorText")}
                 </p>
-                <h1 className="text-[54px] xs:max-w-[80%] sm:max-w-[90%] l:text-7xl lg:text-8xl font-extrabold uppercase text-center md:text-start mx-auto md:mx-0 lg:leading-[1.17]">
+                <h1 className="leading-none text-[54px] xs:max-w-[80%] sm:max-w-[90%] l:text-7xl lg:text-8xl font-extrabold uppercase text-center md:text-start mx-auto md:mx-0 lg:leading-[1.17]">
                   {t("title")}
                 </h1>
               </motion.div>

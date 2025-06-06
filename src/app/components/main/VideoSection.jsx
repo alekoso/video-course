@@ -110,7 +110,7 @@ export default function VideoSection() {
               {items.map(({ text, num }, index) => (
                 <li key={index} className="flex flex-col gap-1 md:gap-2">
                   <span className="text-[32px] md:text-5xl leading-[1.17] md:leading-[1.17] font-semibold">
-                    <Counter targetNumber={num} />
+                    {num.includes("%") ? <Counter targetNumber={num} /> : num}
                   </span>
                   <p className="text-xs font-semibold leading-[1.17] uppercase md:text-lg md:leading-[1.17]">
                     {text}

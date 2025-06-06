@@ -81,7 +81,7 @@ export default function HowCreateContent() {
             />
           </div>
 
-          <div className="mx-auto mt-4 md:mt-7 rounded-[18px] py-[26px] md:py-[33px] px-[22px] text-center md:max-w-[534px] bg-transparent border-t-[1.5px] md:border-[1.5px] border-textColorWhite">
+          <div className="w-full mx-auto mt-4 md:mt-7 md:max-w-[534px] rounded-[18px] py-[26px] md:py-[33px] px-[22px] text-center bg-transparent border-t-[1.5px] md:border-[1.5px] border-textColorWhite">
             <h3 className="text-xl l:text-2xl leading-[1.17] l:leading-[1.17] uppercase font-bold text-textColorWhite mb-[18px]">
               {t("timer")}
             </h3>

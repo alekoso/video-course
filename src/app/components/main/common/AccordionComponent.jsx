@@ -81,7 +81,7 @@ export default function AccordionComponent({
                       )}
 
                       {free && (
-                        <mark className="absolute top-[-70%] md:top-[-100%] -translate-y-1/2 left-[5%] rounded-[18419.209px] bg-textColorWhite shadow-[0_2px_4px_rgba(0, 0, 0, 0.25)_inset] border border-[#7375ff] py-1 px-2 l:py-[6px] l:px-[14.5px]">
+                        <mark className="absolute top-[-70%] md:top-[-100%] -translate-y-1/2 right-[1%] rounded-[18419.209px] bg-textColorWhite shadow-[0_2px_4px_rgba(0, 0, 0, 0.25)_inset] border border-[#7375ff] py-1 px-2 l:py-[6px] l:px-[14.5px]">
                           <div className="text-[6px] md:text-[10px] leadibg-[1.17] md:leadibg-[1.17] m-auto font-bold uppercase gradient-secondary-text text-center">
                             {f("text")}
                           </div>

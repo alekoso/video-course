@@ -359,7 +359,7 @@ a {
   background-position: center top;
 
   @media (min-width: 690px) {
-    background-image: url(../../public/image/how-create/bg.png);
+    background-image: url(../../public/image/how-create/bg.webp);
   }
 
   @media (min-width: 768px) {

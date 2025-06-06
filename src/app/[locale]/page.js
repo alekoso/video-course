@@ -43,6 +43,7 @@ export default function Home() {
       </noscript>
       <Hero />
       <VideoSection />
+      <Reviews />
       <IfYouWantSection />
       <CourseBenefits />
       <CourseForYouIf />
@@ -53,7 +54,6 @@ export default function Home() {
       <LearningIncludes />
       <About />
       <Pros />
-      {/* <Reviews /> */}
       <Faq />
       <PurchaseSection />
     </>

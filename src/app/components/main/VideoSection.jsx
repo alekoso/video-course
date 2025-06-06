@@ -83,7 +83,7 @@ export default function VideoSection() {
       <div className="hidden w-[368.221px] h-[346.719px] radial-violet-gradient-large absolute top-[-88px] right-[24px] z-0 md:block" />
 
       <Container>
-        <div className="px-10 lg:px-20 pb-[76px] lg:pb-[200px]">
+        <div className="px-10 lg:px-20 pb-[50px] lg:pb-[200px]">
           <div className="flex flex-col-reverse gap-3 md:flex-row-reverse md:gap-5 md:justify-between relative z-10">
             {/* відео */}
             <div className="w-full h-[569px] sm:h-[458px] rounded-[18px] overflow-hidden">

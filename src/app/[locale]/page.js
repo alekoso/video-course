@@ -48,11 +48,11 @@ export default function Home() {
       <About />
       <PurchaseSection />
       <IfYouWantSection />
+      <Tariffs />
       <CourseBenefits />
       <CourseForYouIf />
-      <TargetAudience />
-      <Tariffs />
       <HowCreateContent />
+      <TargetAudience />
       <LearningIncludes />
       <Pros />
       <Faq />

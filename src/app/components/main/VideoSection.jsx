@@ -84,7 +84,7 @@ export default function VideoSection() {
 
       <Container>
         <div className="px-10 lg:px-20 pb-[76px] lg:pb-[200px]">
-          <div className="flex flex-col gap-6 md:flex-row-reverse md:gap-5 md:justify-between relative z-10">
+          <div className="flex flex-col-reverse gap-3 md:flex-row-reverse md:gap-5 md:justify-between relative z-10">
             {/* відео */}
             <div className="w-full h-[569px] sm:h-[458px] rounded-[18px] overflow-hidden">
               <ReactPlayer

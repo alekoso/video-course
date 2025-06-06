@@ -65,7 +65,7 @@ export default function AccordionComponent({
             >
               {item.tabs.map(({ name, url, pro, free }, index) => (
                 <Tab
-                  className="tab"
+                  className="tab px-2 xs:px-[20px]"
                   key={index}
                   textValue={name}
                   title={

@@ -44,11 +44,11 @@ export default function Home() {
       <Hero />
       <VideoSection />
       <Reviews />
+      <CourseStructure />
       <IfYouWantSection />
       <CourseBenefits />
       <CourseForYouIf />
       <TargetAudience />
-      <CourseStructure />
       <Tariffs />
       <HowCreateContent />
       <LearningIncludes />

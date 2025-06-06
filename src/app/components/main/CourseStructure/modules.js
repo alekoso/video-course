@@ -10,14 +10,14 @@ export const useModules = () => {
       free: false,
       tabs: [
         {
-          name: t("module1.tabs.tab1.name"),
-          url: t("module1.tabs.tab1.url"),
-          pro: false,
-          free: false,
-        },
-        {
           name: t("module1.tabs.tab2.name"),
           url: t("module1.tabs.tab2.url"),
+          pro: false,
+          free: true,
+        },
+        {
+          name: t("module1.tabs.tab1.name"),
+          url: t("module1.tabs.tab1.url"),
           pro: false,
           free: false,
         },

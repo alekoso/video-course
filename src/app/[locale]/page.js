@@ -45,6 +45,8 @@ export default function Home() {
       <VideoSection />
       <Reviews />
       <CourseStructure />
+      <About />
+      <PurchaseSection />
       <IfYouWantSection />
       <CourseBenefits />
       <CourseForYouIf />
@@ -52,7 +54,6 @@ export default function Home() {
       <Tariffs />
       <HowCreateContent />
       <LearningIncludes />
-      <About />
       <Pros />
       <Faq />
       <PurchaseSection />

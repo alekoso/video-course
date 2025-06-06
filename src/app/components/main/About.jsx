@@ -4,6 +4,7 @@ import Image from "next/image";
 import img from "../../../../public/image/about.png";
 import SocLinks from "../main/common/SocLinks";
 import { socLinksAbout } from "../../../utils/routes";
+import PurchaseBtn from "./common/PurchaseBtn";
 
 export default function About() {
   const t = useTranslations("About");

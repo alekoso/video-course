@@ -19,15 +19,18 @@ export default function Reviews() {
   }));
 
   return (
-    <Container>
-      <div id="reviews" className="px-10 lg:px-20 pb-[76px] lg:pb-[200px]">
+    <Container className="overflow-hidden">
+      <div
+        id="reviews"
+        className="px-10 lg:px-20 pb-[76px] lg:pb-[200px] overflow-hidden"
+      >
         <h2 className="uppercase font-bold text-2xl l:text-[48px] leading-[1.17] text-center mb-[36px] l:mb-[52px]">
           {t("title")}
         </h2>
 
         <Swiper
           modules={[Navigation, Pagination]}
-          spaceBetween={20}
+          spaceBetween={15}
           slidesPerView={1}
           navigation={{
             nextEl: ".custom-next",
@@ -37,21 +40,24 @@ export default function Reviews() {
           breakpoints={{
             550: {
               slidesPerView: 2,
+              spaceBetween: 15,
             },
             989: {
               slidesPerView: 3,
+              spaceBetween: 15,
             },
           }}
+          className="!overflow-visible [&_.swiper-slide]:!w-[360px] [&_.swiper-slide]:!h-[440px] [&_.swiper-wrapper]:!w-[360px] md:[&_.swiper-wrapper]:!w-[735px] lg:[&_.swiper-wrapper]:!w-[1110px]"
         >
           {reviewsData.map((review) => (
-            <SwiperSlide key={review.id} className="mx-auto">
-              <div className="rounded-[18px] md:h-[440px] h-[374px] w-full overflow-hidden">
+            <SwiperSlide key={review.id} className="!w-auto">
+              <div className="rounded-[18px] w-[360px] h-[440px] overflow-hidden">
                 <Image
                   src={review.image}
                   alt={`Review ${review.id}`}
-                  width={400}
-                  height={600}
-                  className="w-full h-full"
+                  width={360}
+                  height={440}
+                  className="w-full h-full object-contain"
                 />
               </div>
             </SwiperSlide>

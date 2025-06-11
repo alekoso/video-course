@@ -7,7 +7,7 @@ export default function CourseStructure() {
   const t = useTranslations("CourseStructure");
 
   const modules = useModules();
-  const defaultExpandedKeys = ["6"];
+  const defaultExpandedKeys = ["0"];
 
   return (
     <Container>

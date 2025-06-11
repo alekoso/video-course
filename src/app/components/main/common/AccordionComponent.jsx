@@ -56,9 +56,7 @@ export default function AccordionComponent({
             <p className="mt-8">{item.answer}</p>
           ) : (
             <Tabs
-              defaultSelectedKey={
-                index === 6 ? String(item.tabs.length - 1) : "0"
-              }
+              defaultSelectedKey="1"
               className="mt-[8px] md:mt-[32px] md:mb-[37px] tabs"
               variant="light"
               aria-label="Tabs"

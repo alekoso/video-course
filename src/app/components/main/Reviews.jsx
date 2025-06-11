@@ -6,19 +6,17 @@ import Container from "../../../utils/Container";
 import { useTranslations } from "next-intl";
 import { ArrowIcon } from "../main/common/ArrowIcon";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Reviews() {
   const t = useTranslations("Reviews");
   const [hoveredPrev, setHoveredPrev] = useState(false);
   const [hoveredNext, setHoveredNext] = useState(false);
 
-  const reviewsData = [
-    t("review1"),
-    t("review2"),
-    t("review3"),
-    t("review4"),
-    t("review5"),
-  ];
+  const reviewsData = Array.from({ length: 14 }, (_, i) => ({
+    id: i + 1,
+    image: `/image/reviews/review-${i + 1}.webp`,
+  }));
 
   return (
     <Container>
@@ -45,12 +43,16 @@ export default function Reviews() {
             },
           }}
         >
-          {reviewsData.map((review, index) => (
-            <SwiperSlide key={index} className="mx-auto ">
-              <div className="rounded-[18px] md:h-[440px] bg-textColorWhite h-[374px] w-full p-7 flex justify-center items-center">
-                <p className="text-textColorBlack text-center text-lg font-medium overflow-hidden text-ellipsis line-clamp-8">
-                  {review}
-                </p>
+          {reviewsData.map((review) => (
+            <SwiperSlide key={review.id} className="mx-auto">
+              <div className="rounded-[18px] md:h-[440px] h-[374px] w-full overflow-hidden">
+                <Image
+                  src={review.image}
+                  alt={`Review ${review.id}`}
+                  width={400}
+                  height={600}
+                  className="w-full h-full"
+                />
               </div>
             </SwiperSlide>
           ))}

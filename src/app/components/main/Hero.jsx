@@ -37,7 +37,7 @@ export default function Hero() {
           </div>
 
           <div>
-            <div className="absolute flex flex-col gap-3 md:flex-col-reverse md:gap-[42px] top-[77.5%] left-[-15px] xs:top-[71.5%] md:top-[10%] md:left-[96%] l:left-[89%] lg:top-[18%]">
+            <div className="absolute flex flex-col gap-3 md:flex-col-reverse md:gap-[42px] top-[77.5%] left-[3px] xs:top-[71.5%] md:top-[10%] md:left-[96%] l:left-[89%] lg:top-[18%]">
               <div>
                 <p className="gradient-secondary-text font-bold text-[20.926px] mb-1 md:mb-4 text-center md:text-start lg:text-[32px]">
                   {t("colorText")}

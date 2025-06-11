@@ -105,7 +105,7 @@ export default function VideoSection() {
             {/* текстовий блок */}
             <ul
               style={{ height: "fit-content" }} // костыль для высоты перезаписи класса градиента
-              className="px-[30px] py-[22px] md:py-[61px] l:px-[110px] rounded-[18px] gradient-background  flex md:flex-col gap-[30px] md:gap-7 justify-center md:w-[32%] l:w-[39%]"
+              className="px-[19px] py-[22px] md:py-[61px] l:px-[110px] rounded-[18px] gradient-background  flex md:flex-col gap-[30px] md:gap-7 justify-center md:w-[32%] l:w-[39%]"
             >
               {items.map(({ text, num }, index) => (
                 <li key={index} className="flex flex-col gap-1 md:gap-2">

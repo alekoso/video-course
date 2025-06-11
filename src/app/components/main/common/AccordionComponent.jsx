@@ -56,15 +56,15 @@ export default function AccordionComponent({
             <p className="mt-8">{item.answer}</p>
           ) : (
             <Tabs
-              defaultSelectedKey="1"
+              defaultSelectedKey={index === 0 ? "2" : "1"}
               className="mt-[8px] md:mt-[32px] md:mb-[37px] tabs"
               variant="light"
               aria-label="Tabs"
             >
-              {item.tabs.map(({ name, url, pro, free }, index) => (
+              {item.tabs.map(({ name, url, pro, free }, tabIndex) => (
                 <Tab
                   className="tab px-2 xs:px-[20px]"
-                  key={index}
+                  key={tabIndex + 1}
                   textValue={name}
                   title={
                     <div>

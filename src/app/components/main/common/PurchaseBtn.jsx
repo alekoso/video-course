@@ -96,7 +96,7 @@ export default function PurchaseBtn({
 
         {(buttonVariant === "large" || buttonVariant === "largeGradient") && (
           <motion.div
-            className="absolute w-[59px] h-[60px] lg:w-[74px] lg:h-[74px] rounded-[37px] bg-[#FF4A77] top-0 right-0 flex justify-center items-center"
+            className="absolute w-[55px] h-[60px] lg:w-[74px] lg:h-[74px] rounded-[37px] bg-[#FF4A77] top-0 right-0 flex justify-center items-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}

@@ -39,14 +39,17 @@ export default function Reviews() {
                 prevEl: ".custom-prev",
               }}
               loop
+              slidesPerGroup={1}
               breakpoints={{
                 550: {
                   slidesPerView: 2,
                   spaceBetween: 15,
+                  slidesPerGroup: 1,
                 },
                 989: {
                   slidesPerView: 3,
                   spaceBetween: 15,
+                  slidesPerGroup: 1,
                 },
               }}
               className="[&_.swiper-wrapper]:!w-[360px] md:[&_.swiper-wrapper]:!w-[735px] lg:[&_.swiper-wrapper]:!w-[1110px]"

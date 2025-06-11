@@ -28,41 +28,45 @@ export default function Reviews() {
           {t("title")}
         </h2>
 
-        <Swiper
-          modules={[Navigation, Pagination]}
-          spaceBetween={15}
-          slidesPerView={1}
-          navigation={{
-            nextEl: ".custom-next",
-            prevEl: ".custom-prev",
-          }}
-          loop
-          breakpoints={{
-            550: {
-              slidesPerView: 2,
-              spaceBetween: 15,
-            },
-            989: {
-              slidesPerView: 3,
-              spaceBetween: 15,
-            },
-          }}
-          className="!overflow-visible [&_.swiper-slide]:!w-[360px] [&_.swiper-slide]:!h-[440px] [&_.swiper-wrapper]:!w-[360px] md:[&_.swiper-wrapper]:!w-[735px] lg:[&_.swiper-wrapper]:!w-[1110px]"
-        >
-          {reviewsData.map((review) => (
-            <SwiperSlide key={review.id} className="!w-auto">
-              <div className="rounded-[18px] w-[360px] h-[440px] overflow-hidden">
-                <Image
-                  src={review.image}
-                  alt={`Review ${review.id}`}
-                  width={360}
-                  height={440}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className="w-full flex justify-center">
+          <div className="w-[360px] md:w-[735px] lg:w-[1110px]">
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={15}
+              slidesPerView={1}
+              navigation={{
+                nextEl: ".custom-next",
+                prevEl: ".custom-prev",
+              }}
+              loop
+              breakpoints={{
+                550: {
+                  slidesPerView: 2,
+                  spaceBetween: 15,
+                },
+                989: {
+                  slidesPerView: 3,
+                  spaceBetween: 15,
+                },
+              }}
+              className="[&_.swiper-wrapper]:!w-[360px] md:[&_.swiper-wrapper]:!w-[735px] lg:[&_.swiper-wrapper]:!w-[1110px]"
+            >
+              {reviewsData.map((review) => (
+                <SwiperSlide key={review.id} className="!w-[360px]">
+                  <div className="rounded-[18px] w-[360px] h-[440px] overflow-hidden">
+                    <Image
+                      src={review.image}
+                      alt={`Review ${review.id}`}
+                      width={360}
+                      height={440}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
 
         {/* Кнопки навігації */}
         <div className="flex gap-4 justify-center md:gap-6 mt-8 md:mt-10">

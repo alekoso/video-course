@@ -10,6 +10,8 @@ module.exports = {
   ],
   theme: {
     screens: {
+      xls: "375px",
+      xxs: "393px",
       xs: "460px",
       sm: "660px",
       md: "768px",

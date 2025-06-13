@@ -23,7 +23,7 @@ export default function Hero() {
               alt="Aleko Sokurashvili"
               sizes="100vh"
               priority
-              className="w-[313px] h-auto object-cover object-center  mx-auto rounded-[18px] md:hidden"
+              className="w-[280px] xxs:w-[313px] h-auto object-cover object-center  mx-auto rounded-[18px] md:hidden"
               quality={100}
             />
             <Image
@@ -37,7 +37,7 @@ export default function Hero() {
           </div>
 
           <div>
-            <div className="absolute flex flex-col gap-3 md:flex-col-reverse md:gap-[42px] top-[77.5%] left-[3px] xs:top-[71.5%] md:top-[10%] md:left-[96%] l:left-[89%] lg:top-[18%]">
+            <div className="absolute flex flex-col gap-3 md:flex-col-reverse md:gap-[42px] top-[77.5%] left-[-14px] xls:left-[-7px] xxs:left-[3px] xs:top-[71.5%] md:top-[10%] md:left-[96%] l:left-[89%] lg:top-[18%]">
               <div>
                 <p className="gradient-secondary-text font-bold text-[20.926px] mb-1 md:mb-4 text-center md:text-start lg:text-[32px]">
                   {t("colorText")}
@@ -48,7 +48,7 @@ export default function Hero() {
               </div>
 
               <div>
-                <p className="text-center xs:max-w-[80%] md:max-w-[96%] mx-auto md:mx-0 text-sm md:text-start md:pl-20 l:pl-28 lg:text-[18px] leading-[1.15]">
+                <p className="text-center w-[308px] xs:max-w-[80%] md:max-w-[96%] mx-auto md:mx-0 text-sm md:text-start md:pl-20 l:pl-28 lg:text-[18px] leading-[1.15]">
                   {t("description")}
                 </p>
               </div>

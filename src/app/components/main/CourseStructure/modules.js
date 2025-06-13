@@ -234,31 +234,31 @@ export const useModules = () => {
       tabs: [
         {
           name: t("module7.tabs.tab1.name"),
-          url: t("module7.tabs.tab1.url"),
+          url: "",
           pro: false,
           free: false,
         },
         {
           name: t("module7.tabs.tab2.name"),
-          url: t("module7.tabs.tab2.url"),
+          url: "",
           pro: false,
           free: false,
         },
         {
           name: t("module7.tabs.tab3.name"),
-          url: t("module7.tabs.tab3.url"),
+          url: "",
           pro: false,
           free: false,
         },
         {
           name: t("module7.tabs.tab4.name"),
-          url: t("module7.tabs.tab4.url"),
+          url: "",
           pro: false,
           free: false,
         },
         {
           name: t("module7.tabs.tab5.name"),
-          url: t("module7.tabs.tab5.url"),
+          url: "",
           pro: false,
           free: false,
         },

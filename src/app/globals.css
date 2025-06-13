@@ -39,8 +39,12 @@ a {
     #e56f8c 172.25%
   );
   box-shadow: 3.883px 5.825px 9.708px 3.883px rgba(167, 93, 243, 0.2) inset;
+  padding-left: 16px;
+  padding-right: 45px;
 
   @media (min-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
     box-shadow: 7.368px 11.053px 18.421px 7.368px rgba(167, 93, 243, 0.2) inset;
   }
 }
